@@ -48,7 +48,7 @@ class _HadithDetailsState extends State<HadithDetails> {
                 ),
                 Text(
                   hadith.title,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: ColorsManager.gold),

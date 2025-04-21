@@ -35,7 +35,7 @@ class _HadithCardWidgetState extends State<HadithCardWidget> {
         color: ColorsManager.gold,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
             width: MediaQuery.sizeOf(context).width * 0.8,
             decoration: const BoxDecoration(
                 image: DecorationImage(
@@ -67,7 +67,7 @@ class _HadithCardWidgetState extends State<HadithCardWidget> {
                           ),
                           Text(
                             hadith!.title,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                                 color: ColorsManager.black),
@@ -78,7 +78,7 @@ class _HadithCardWidgetState extends State<HadithCardWidget> {
                           textDirection: TextDirection.rtl,
                           textAlign: TextAlign.center,
                           maxLines: 10,
-                          style: TextStyle(
+                          style: const TextStyle(
                               overflow: TextOverflow.ellipsis,
 
                               // decorationStyle: TextDecorationStyle.dotted,
@@ -99,7 +99,7 @@ class _HadithCardWidgetState extends State<HadithCardWidget> {
     String title = fileContent.substring(startLine, endLine);
     String content = fileContent.substring(endLine + 1);
     hadith = HadithDM(title: title, content: content);
-    await Future.delayed(Duration(milliseconds: 500));
+    await Future.delayed(const Duration(milliseconds: 500));
     setState(() {});
   }
 }

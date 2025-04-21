@@ -13,9 +13,9 @@ class AppRoutes {
   static const String onboarding = '/introduction';
   static Map<String, WidgetBuilder> routes = {
     splash: (_) => const Splash(),
-    home: (_) => MainLayout(),
-    quranDetails: (_) => QuranDetails(),
-    hadithDetails: (_) => HadithDetails(),
-    onboarding: (_) => Onboarding(),
+    home: (_) => const MainLayout(),
+    quranDetails: (_) => const QuranDetails(),
+    hadithDetails: (_) => const HadithDetails(),
+    onboarding: (_) => const Onboarding(),
   };
 }

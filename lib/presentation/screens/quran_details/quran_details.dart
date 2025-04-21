@@ -63,7 +63,7 @@ class _QuranDetailsState extends State<QuranDetails> {
                 ),
                 Text(
                   arguments.suraNameAr,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: ColorsManager.gold),
@@ -71,7 +71,7 @@ class _QuranDetailsState extends State<QuranDetails> {
               ],
             ),
             suraContent.isEmpty
-                ? Expanded(child: Center(child: CircularProgressIndicator()))
+                ? const Expanded(child: Center(child: CircularProgressIndicator()))
                 : SuraContent(suraContent: suraContent),
             Image.asset(AssetsManager.quranDetailsImage)
 
@@ -92,7 +92,7 @@ class _QuranDetailsState extends State<QuranDetails> {
       line += "[${i + 1}]";
       suraLinesFinal.add(line);
     }
-    await Future.delayed(Duration(milliseconds: 500));
+    await Future.delayed(const Duration(milliseconds: 500));
     setState(() {
       suraContent = suraLinesFinal.join();
     });

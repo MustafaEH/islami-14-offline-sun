@@ -8,7 +8,7 @@ import 'package:islami_c14_offline_sun/presentation/screens/main_layout/tabs/rad
 import 'package:islami_c14_offline_sun/presentation/screens/main_layout/tabs/tasbeh/tasbeeh.dart';
 
 class MainLayout extends StatefulWidget {
-  MainLayout({super.key});
+  const MainLayout({super.key});
 
   @override
   State<MainLayout> createState() => _MainLayoutState();
@@ -18,11 +18,11 @@ class _MainLayoutState extends State<MainLayout> {
   int selectedIndex = 0;
 
   List<Widget> tabs = [
-    Quran(),
-    Hadith(),
-    Tasbeh(),
+    const Quran(),
+    const Hadith(),
+    const Tasbeh(),
     RadioTab(),
-    PrayTimes(),
+    const PrayTimes(),
   ];
 
   @override
@@ -36,7 +36,7 @@ class _MainLayoutState extends State<MainLayout> {
   Widget buildIcon(String iconPath, bool isSelected) {
     return isSelected
         ? Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
             decoration: BoxDecoration(
                 color: ColorsManager.black.withOpacity(0.6),
                 borderRadius: BorderRadius.circular(66)),

@@ -64,7 +64,7 @@ class MostRecentSurasState extends State<MostRecentSuras> {
             ));
       },
       child: Container(
-        margin: EdgeInsets.only(right: 10),
+        margin: const EdgeInsets.only(right: 10),
         decoration: BoxDecoration(
             color: Theme.of(context).primaryColor,
             borderRadius: BorderRadius.circular(20)),
