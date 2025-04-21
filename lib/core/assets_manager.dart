@@ -24,4 +24,13 @@ class AssetsManager {
   static const String onboarding3 = "$base/onboarding3.png";
   static const String onboarding4 = "$base/onboarding4.png";
   static const String onboarding5 = "$base/onboarding5.png";
+  static const String sebha = "$base/Sebha.png";
+  static const String sebhaBackground = "$base/sebha_bg.png";
+  static const String tasbeehHeader = "$base/tasbeh_header.png";
+  static const String sebhaBody = "$base/sebha_body.png";
+  static const String sebhaHead = "$base/sebha_head.png";
+  static const String radioHeader = "$base/radio_header.png";
+  static const String radioBackground = "$base/radio_bg.png";
+  static const String radioPlayerBackground = "$base/radio_player_bg.png";
+  static const String playingRadio = "$base/playing_radio.png";
 }

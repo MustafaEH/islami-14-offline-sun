@@ -20,9 +20,8 @@ class _QuranState extends State<Quran> {
 
   @override
   Widget build(BuildContext context) {
-    print("Ana da5alt elbuild");
-    return Container(
-      decoration: BoxDecoration(
+    return  Container(
+      decoration: const BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.fill,
               image: AssetImage(AssetsManager.quranTabBackground))),

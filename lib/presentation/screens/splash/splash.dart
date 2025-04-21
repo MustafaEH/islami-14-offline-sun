@@ -22,9 +22,9 @@ class _SplashState extends State<Splash> {
 
   void navigate() {
     Future.delayed(
-      Duration(seconds: 3),
+      const Duration(seconds: 3),
       () {
-        Navigator.pushReplacementNamed(context, AppRoutes.home);
+        Navigator.pushReplacementNamed(context, AppRoutes.onboarding);
       },
     );
   }

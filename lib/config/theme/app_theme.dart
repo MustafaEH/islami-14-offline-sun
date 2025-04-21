@@ -13,12 +13,14 @@ class AppTheme {
             fontWeight: FontWeight.bold,
             fontSize: 20)),
     scaffoldBackgroundColor: ColorsManager.black,
-    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: ColorsManager.gold,
       selectedItemColor: ColorsManager.white,
       unselectedItemColor: ColorsManager.black,
       type: BottomNavigationBarType.fixed,
     ),
+
+
     textTheme: const TextTheme(
       labelSmall: TextStyle(
           fontSize: 16,
@@ -32,6 +34,11 @@ class AppTheme {
           fontSize: 24,
           fontWeight: FontWeight.w500,
           color: ColorsManager.black),
+      bodyLarge: TextStyle(
+        color: ColorsManager.white,
+        fontSize: 36,
+        fontWeight: FontWeight.bold,
+      ),
     ),
   );
 }

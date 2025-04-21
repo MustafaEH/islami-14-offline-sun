@@ -4,34 +4,35 @@ import 'package:islami_c14_offline_sun/core/assets_manager.dart';
 import 'package:islami_c14_offline_sun/core/colors_manager.dart';
 import 'package:islami_c14_offline_sun/core/routes_manager/routes.dart';
 
-class Onboarding extends StatelessWidget {
-  Onboarding({super.key});
+class Onboarding extends StatefulWidget {
+  const Onboarding({super.key});
 
+  @override
+  State<Onboarding> createState() => _OnboardingState();
+}
+
+class _OnboardingState extends State<Onboarding> {
   // void _onIntroEnd(context) {
-  //   Navigator.of(context).pushReplacement(
-  //     MaterialPageRoute(builder: (_) => const HomePage()),
-  //   );
-  // }
-
   Widget _buildImage(String imagePath,
-      [double width = 350, double height = 171]) {
+      [double width = 350]) {
     return Image.asset(
       imagePath,
     );
   }
 
-  TextStyle bodyStyle = TextStyle(fontSize: 19.0);
+  TextStyle bodyStyle = const TextStyle(fontSize: 19.0);
 
   late PageDecoration pageDecoration = PageDecoration(
     imageAlignment: Alignment.center,
     imageFlex: 2,
 
-    titleTextStyle: TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700),
+    titleTextStyle:
+        const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700),
     bodyTextStyle: bodyStyle,
     // bodyPadding: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
     pageColor: ColorsManager.black,
 
-    imagePadding: EdgeInsets.only(top: 150, left: 16, right: 16),
+    imagePadding: const EdgeInsets.only(top: 150, left: 16, right: 16),
   );
 
   @override
@@ -52,20 +53,10 @@ class Onboarding extends StatelessWidget {
           ),
         ),
       ),
-      // globalFooter: SizedBox(
-      //   width: double.infinity,
-      //   height: 60,
-      //   child: ElevatedButton(
-      //     child: const Text(
-      //       'Let\'s go right away!',
-      //       style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-      //     ),
-      //     onPressed: () => {}
-      //   ),
-      // ),
+
       pages: [
         PageViewModel(
-          titleWidget: Text(
+          titleWidget: const Text(
             "Welcome To Islami App",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -78,7 +69,7 @@ class Onboarding extends StatelessWidget {
           decoration: pageDecoration,
         ),
         PageViewModel(
-          titleWidget: Text(
+          titleWidget: const Text(
             "Welcome To Islami",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -86,7 +77,7 @@ class Onboarding extends StatelessWidget {
                 color: ColorsManager.gold,
                 fontWeight: FontWeight.w600),
           ),
-          bodyWidget: Text(
+          bodyWidget: const Text(
             "We Are Very Excited To Have You In Our Community",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -98,7 +89,7 @@ class Onboarding extends StatelessWidget {
           decoration: pageDecoration,
         ),
         PageViewModel(
-          titleWidget: Text(
+          titleWidget: const Text(
             "Reading the Quran",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -106,7 +97,7 @@ class Onboarding extends StatelessWidget {
                 color: ColorsManager.gold,
                 fontWeight: FontWeight.w600),
           ),
-          bodyWidget: Text(
+          bodyWidget: const Text(
             "Read, and your Lord is the Most Generous",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -118,7 +109,7 @@ class Onboarding extends StatelessWidget {
           decoration: pageDecoration,
         ),
         PageViewModel(
-          titleWidget: Text(
+          titleWidget: const Text(
             "Bearish",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -126,7 +117,7 @@ class Onboarding extends StatelessWidget {
                 color: ColorsManager.gold,
                 fontWeight: FontWeight.w600),
           ),
-          bodyWidget: Text(
+          bodyWidget: const Text(
             "Praise the name of your Lord, the Most High",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -138,7 +129,7 @@ class Onboarding extends StatelessWidget {
           decoration: pageDecoration,
         ),
         PageViewModel(
-          titleWidget: Text(
+          titleWidget: const Text(
             "Holy Quran Radio",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -146,7 +137,7 @@ class Onboarding extends StatelessWidget {
                 color: ColorsManager.gold,
                 fontWeight: FontWeight.w600),
           ),
-          bodyWidget: Text(
+          bodyWidget: const Text(
             "You can listen to the Holy Quran Radio through the application for free and easily",
             textAlign: TextAlign.center,
             style: TextStyle(
